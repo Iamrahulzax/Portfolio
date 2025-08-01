@@ -1,100 +1,331 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Negi - Aspiring Developer & Data Enthusiast</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
+    <title>Rahul Negi - Developer Portfolio</title>
+    <meta name="description" content="Advanced portfolio for Rahul Negi, a B.Tech student specializing in Web Development, DSA, and exploring Data Science & Generative AI.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-<body>
-    <header>
-        <div class="container">
-            <h1>Rahul Negi Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#interests">Interests</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+        }
+        .glass-effect {
+            background: rgba(22, 27, 34, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(48, 54, 61, 0.5);
+        }
+        .skill-bar-bg {
+            background-color: #21262d;
+        }
+        .skill-bar-fill {
+            background: linear-gradient(90deg, #1a9988, #28c7b4);
+            transition: width 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+            width: 0;
+        }
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .profile-photo {
+            /* Updated to a square with rounded corners */
+            border-radius: 0.75rem; 
+            border: 4px solid #21262d;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+        .profile-photo:hover {
+            filter: grayscale(50%);
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="glass-effect sticky top-0 z-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-white">Rahul Negi</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-4 text-xs font-mono text-gray-400">
+                    <div id="time-widget" class="flex items-center space-x-2">
+                        <svg class="w-4 h-4 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <span id="current-time">--:--:--</span>
+                    </div>
+                    <div id="battery-widget" class="flex items-center space-x-2">
+                        <span id="battery-icon">🔋</span>
+                        <span id="battery-level">---%</span>
+                    </div>
+                    <div id="weather-widget" class="flex items-center space-x-2">
+                        <span id="weather-icon">--</span>
+                        <span>Dehradun, IN</span>
+                    </div>
+                </div>
+
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+                    <a href="#about" class="text-gray-300 hover:text-cyan-400 transition-colors">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-cyan-400 transition-colors">Skills</a>
+                    <a href="#projects" class="text-gray-300 hover:text-cyan-400 transition-colors">Projects</a>
+                    <a href="#contact" class="bg-cyan-500 hover:bg-cyan-600 text-white px-4 py-2 rounded-md transition-colors">Contact</a>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <section class="hero" id="about">
-        <div class="container">
-            <div class="hero-content">
-                <h2>Namaste! I'm Rahul Negi.</h2>
-                <p>
-                    A **2nd-year B.Tech student** from **Dehradun, Uttarakhand**, currently immersed in the exciting
-                    world of technology. I'm passionate about building efficient software and exploring the vast
-                    potential of data, with a strong focus on honing my problem-solving skills through **Data Structures
-                    and Algorithms (DSA)**.
-                </p>
-                <p>
-                    My curiosity actively drives me towards the cutting edge of **Data Science** and **Generative AI**,
-                    where I aspire to contribute innovative and impactful solutions.
-                </p>
-                <a href="#contact" class="button">Let's Connect</a>
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        
+        <section id="hero" class="text-center min-h-[60vh] flex flex-col justify-center items-center">
+            <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold text-white leading-tight mb-4">
+                Crafting Digital Solutions, <br class="hidden sm:block"> One Line of Code at a Time.
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg sm:text-xl text-gray-400 mb-8">
+                I'm Rahul Negi, a second-year B.Tech student from Dehradun. I build efficient, scalable web applications and I'm passionate about the intersection of Data Science and Generative AI.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#projects" class="bg-cyan-500 hover:bg-cyan-600 text-white font-semibold py-3 px-8 rounded-lg transition-transform transform hover:scale-105">View My Work</a>
+                <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-8 rounded-lg transition-transform transform hover:scale-105">Get In Touch</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="skills" id="skills">
-        <div class="container">
-            <h3>My Skills</h3>
-            <ul>
-                <li>C</li>
-                <li>C++</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Data Structures & Algorithms (DSA)</li>
-                <li>Git/GitHub (Basics)</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="interests" id="interests">
-        <div class="container">
-            <h3>My Interests</h3>
-            <ul>
-                <li>Data Science</li>
-                <li>Generative AI</li>
-                <li>Web Development</li>
-                <li>Machine Learning</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="projects" id="projects">
-        <div class="container">
-            <h3>My Projects (Coming Soon!)</h3>
-            <p>I'm diligently working on exciting projects that will showcase my proficiency in DSA, web development,
-                and my emerging expertise in Data Science and Generative AI. Stay tuned for updates!</p>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <div class="container">
-            <h3>Connect with Me</h3>
-            <p>I'm always open to discussing new ideas, potential collaborations, or just sharing insights. Feel free to
-                reach out!</p>
-            <div class="contact-info-line">
-                <a href="mailto:your.email@example.com">your.email@example.com</a>
-                <a href="https://www.linkedin.com/in/rahul-negi-7b19b7321/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/Iamrahulzax" target="_blank">GitHub</a>
-                <a href="https://leetcode.com/u/rahulnegi_01/" target="_blank">LeetCode</a>
+        <section id="about" class="py-24 fade-in-section">
+            <div class="grid md:grid-cols-5 gap-12 items-center">
+                <div class="md:col-span-2 flex justify-center">
+                    <div class="w-64 h-64 md:w-80 md:h-80">
+                        <img src="https://i.imgur.com/0uBqW3z.png" alt="A professional headshot of Rahul Negi" class="profile-photo w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="md:col-span-3">
+                    <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
+                    <div id="about-me-text">
+                        <p class="text-gray-400 mb-4">
+                            Hello! I'm a dedicated and curious student developer with a strong foundation in computer science fundamentals. My journey into technology began with a fascination for how complex problems can be solved with elegant, logical solutions. This led me to dive deep into Data Structures and Algorithms, which I see as the bedrock of all great software.
+                        </p>
+                        <p class="text-gray-400 mb-6">
+                            While I enjoy the challenge of competitive programming, I'm equally passionate about building tangible products. I'm currently honing my skills in web development and exploring the revolutionary fields of Data Science and Generative AI. My goal is to leverage these technologies to create innovative applications that are not just functional, but also provide meaningful user experiences.
+                        </p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/Iamrahulzax" target="_blank" class="text-gray-400 hover:text-cyan-400 transition">GitHub</a>
+                        <a href="https://www.linkedin.com/in/rahul-negi-7b19b7321/" target="_blank" class="text-gray-400 hover:text-cyan-400 transition">LinkedIn</a>
+                        <a href="https://leetcode.com/u/rahulnegi_01/" target="_blank" class="text-gray-400 hover:text-cyan-400 transition">LeetCode</a>
+                    </div>
+                </div>
             </div>
-            <p class="copyright">&copy; 2025 Rahul Negi. All rights reserved. Based in Dehradun, Uttarakhand.</p>
+        </section>
+
+        <section id="skills" class="py-24 fade-in-section">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Technical Skills</h2>
+                <p class="text-gray-400 mt-2">My ever-growing toolkit for building digital experiences.</p>
+            </div>
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="skill-item">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-cyan-300">C / C++ (DSA)</span>
+                        <span class="text-sm font-medium text-cyan-300">90%</span>
+                    </div>
+                    <div class="w-full skill-bar-bg rounded-full h-2.5">
+                        <div class="skill-bar-fill h-2.5 rounded-full" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-cyan-300">JavaScript</span>
+                        <span class="text-sm font-medium text-cyan-300">85%</span>
+                    </div>
+                    <div class="w-full skill-bar-bg rounded-full h-2.5">
+                        <div class="skill-bar-fill h-2.5 rounded-full" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-cyan-300">HTML & CSS</span>
+                        <span class="text-sm font-medium text-cyan-300">95%</span>
+                    </div>
+                    <div class="w-full skill-bar-bg rounded-full h-2.5">
+                        <div class="skill-bar-fill h-2.5 rounded-full" data-width="95%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="flex justify-between mb-1">
+                        <span class="text-base font-medium text-cyan-300">Git & GitHub</span>
+                        <span class="text-sm font-medium text-cyan-300">80%</span>
+                    </div>
+                    <div class="w-full skill-bar-bg rounded-full h-2.5">
+                        <div class="skill-bar-fill h-2.5 rounded-full" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24 fade-in-section">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Projects</h2>
+                <p class="text-gray-400 mt-2">A selection of my work. Hover over an image to see details.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="rounded-lg overflow-hidden group relative glass-effect">
+                    <img src="https://placehold.co/600x400/0d1117/28c7b4?text=My+Project+1" 
+                         alt="Project 1 Screenshot" 
+                         class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Project Title 1</h3>
+                        <p class="text-gray-300 text-sm mb-4">A brief description of what this project is about and the problems it solves.</p>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="text-xs bg-cyan-900/50 text-cyan-300 px-2 py-1 rounded-full">React</span>
+                            <span class="text-xs bg-cyan-900/50 text-cyan-300 px-2 py-1 rounded-full">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-lg overflow-hidden group relative glass-effect">
+                    <img src="https://placehold.co/600x400/0d1117/28c7b4?text=My+Project+2" 
+                         alt="Project 2 Screenshot" 
+                         class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Project Title 2</h3>
+                        <p class="text-gray-300 text-sm mb-4">A brief description of what this project is about and the problems it solves.</p>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="text-xs bg-cyan-900/50 text-cyan-300 px-2 py-1 rounded-full">Python</span>
+                            <span class="text-xs bg-cyan-900/50 text-cyan-300 px-2 py-1 rounded-full">Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-lg overflow-hidden group relative glass-effect">
+                    <img src="https://placehold.co/600x400/0d1117/28c7b4?text=My+Project+3" 
+                         alt="Project 3 Screenshot" 
+                         class="w-full h-60 object-cover transition-transform duration-300 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center p-6 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-bold text-white mb-2">Project Title 3</h3>
+                        <p class="text-gray-300 text-sm mb-4">A brief description of what this project is about and the problems it solves.</p>
+                        <div class="flex flex-wrap gap-2 justify-center">
+                            <span class="text-xs bg-cyan-900/50 text-cyan-300 px-2 py-1 rounded-full">AI/ML</span>
+                            <span class="text-xs bg-cyan-900/50 text-cyan-300 px-2 py-1 rounded-full">TensorFlow</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 fade-in-section">
+            <div class="text-center max-w-2xl mx-auto">
+                <h2 class="text-3xl font-bold text-white">Get In Touch</h2>
+                <p class="text-gray-400 mt-2 mb-8">
+                    I'm currently seeking internship opportunities and am open to collaboration on interesting projects. Whether you have a question or just want to say hi, my inbox is always open!
+                </p>
+                <a href="mailto:your.email@example.com" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-transform transform hover:scale-105">
+                    Say Hello
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-500">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://github.com/Iamrahulzax" target="_blank" class="hover:text-cyan-400 transition">GitHub</a>
+                <a href="https://www.linkedin.com/in/rahul-negi-7b19b7321/" target="_blank" class="hover:text-cyan-400 transition">LinkedIn</a>
+                <a href="https://leetcode.com/u/rahulnegi_01/" target="_blank" class="hover:text-cyan-400 transition">LeetCode</a>
+            </div>
+            <p>&copy; 2025 Rahul Negi. Crafted with passion in Dehradun, Uttarakhand.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        const timeElement = document.getElementById('current-time');
+        function updateTime() {
+            const now = new Date();
+            timeElement.textContent = now.toLocaleTimeString('en-US', { hour12: false });
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
 
+        const batteryLevelElement = document.getElementById('battery-level');
+        const batteryIconElement = document.getElementById('battery-icon');
+        if ('getBattery' in navigator) {
+            navigator.getBattery().then(function(battery) {
+                function updateBatteryStatus() {
+                    batteryLevelElement.textContent = `${Math.round(battery.level * 100)}%`;
+                    if (battery.charging) {
+                        batteryIconElement.textContent = '⚡️';
+                    } else if (battery.level > 0.8) {
+                        batteryIconElement.textContent = '🔋';
+                    } else if (battery.level > 0.2) {
+                        batteryIconElement.textContent = 'M';
+                    } else {
+                        batteryIconElement.textContent = '🪫';
+                    }
+                }
+                battery.addEventListener('levelchange', updateBatteryStatus);
+                battery.addEventListener('chargingchange', updateBatteryStatus);
+                updateBatteryStatus();
+            });
+        } else {
+            document.getElementById('battery-widget').style.display = 'none';
+        }
+
+        const weatherIconElement = document.getElementById('weather-icon');
+        fetch('https://wttr.in/Dehradun?format=j1')
+            .then(response => response.json())
+            .then(data => {
+                const weather = data.current_condition[0];
+                const temp = weather.temp_C;
+                const description = weather.weatherDesc[0].value;
+                let icon = '☁️';
+                if (description.includes('Sunny') || description.includes('Clear')) icon = '☀️';
+                if (description.includes('Rain') || description.includes('Shower')) icon = '🌧️';
+                if (description.includes('Cloudy') || description.includes('Overcast')) icon = '☁️';
+                if (description.includes('Mist') || description.includes('Fog')) icon = '🌫️';
+                weatherIconElement.textContent = `${icon} ${temp}°C`;
+            })
+            .catch(error => {
+                console.error('Error fetching weather:', error);
+                weatherIconElement.textContent = '🌦️ --°C';
+            });
+
+        const sections = document.querySelectorAll('.fade-in-section');
+        const skillBars = document.querySelectorAll('.skill-bar-fill');
+        const sectionObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    if (entry.target.id === 'skills') {
+                        skillBars.forEach(bar => {
+                            bar.style.width = bar.getAttribute('data-width');
+                        });
+                    }
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        sections.forEach(section => {
+            sectionObserver.observe(section);
+        });
+    });
+    </script>
+</body>
 </html>
