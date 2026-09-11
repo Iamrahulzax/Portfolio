@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul Negi — Computer Science Engineering | AI/ML & Software Developer</title>
+  <meta name="description" content="Personal portfolio of Rahul Negi — 3rd Year Computer Science Engineering student at THDC-IHET specializing in AI/ML, Data Structures & Algorithms, and Software Development.">
+  
+  <!-- Fonts: Bebas Neue for oversized display, Plus Jakarta Sans for grotesk body, JetBrains Mono for bracket micro-typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Lenis Smooth Scroll CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.18/dist/lenis.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-en">
+  <!-- Subtle Grid Texture Overlay -->
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-brand-cluster" style="display: flex; align-items: center; gap: 1rem;">
+        <a href="#hero" class="brand-logo" aria-label="Rahul Negi Home">
+          <span class="brand-text">RN</span>
+          <span class="brand-dot"></span>
+        </a>
+
+        <!-- Top Left Corner Social Direct Links Bar with Brand Icons -->
+        <div class="top-left-social-bar">
+          <a href="https://github.com/Iamrahulzax" target="_blank" rel="noopener noreferrer" class="top-left-link" aria-label="GitHub Profile" title="GitHub Profile">
+            <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rahul-negi-662a26428/" target="_blank" rel="noopener noreferrer" class="top-left-link" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+            <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+          <a href="https://leetcode.com/u/rahulnegi_01/" target="_blank" rel="noopener noreferrer" class="top-left-link" aria-label="LeetCode Profile" title="LeetCode Profile">
+            <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.17 5.79a1.374 1.374 0 0 0-.012 1.932l4.887 4.908a1.374 1.374 0 0 0 1.944 0l.012-.012a1.374 1.374 0 0 0 0-1.944L9.123 5.79l4.352-4.38A1.374 1.374 0 0 0 13.483 0zm-8.8 8.01a1.374 1.374 0 0 0-.973.402l-3.28 3.3a1.374 1.374 0 0 0 0 1.944l9.784 9.83a1.374 1.374 0 0 0 1.944 0l3.28-3.3a1.374 1.374 0 0 0 0-1.944l-9.784-9.83a1.374 1.374 0 0 0-.972-.402zm.02 3.876 6.868 6.9-1.336 1.344-6.868-6.9 1.336-1.344z"/>
+            </svg>
+          </a>
+          <a href="https://www.kaggle.com/rahulnegi01" target="_blank" rel="noopener noreferrer" class="top-left-link" aria-label="Kaggle Profile" title="Kaggle Profile">
+            <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.825 23.859h-3.416l-5.786-8.358-3.076 2.977v5.381H3.633V.141h2.914v13.684l8.28-8.683h3.696l-6.883 7.07 7.185 11.647z"/>
+            </svg>
+          </a>
+          <a href="mailto:rahulnegi270406@gmail.com" class="top-left-link" aria-label="Send Email" title="Send Email">
+            <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Navigation links -->
+      <nav class="nav-menu" id="navMenu">
+        <a href="#about" class="nav-link" data-en="ABOUT" data-ru="О МНЕ">ABOUT</a>
+        <span class="nav-sep">·</span>
+        <a href="#education" class="nav-link" data-en="EDUCATION" data-ru="ОБРАЗОВАНИЕ">EDUCATION</a>
+        <span class="nav-sep">·</span>
+        <a href="#skills" class="nav-link" data-en="SKILLS" data-ru="НАВЫКИ">SKILLS</a>
+        <span class="nav-sep">·</span>
+        <a href="#work" class="nav-link" data-en="PROJECTS" data-ru="ПРОЕКТЫ">PROJECTS</a>
+        <span class="nav-sep">·</span>
+        <a href="#platforms" class="nav-link" data-en="PLATFORMS" data-ru="ПЛАТФОРМЫ">PLATFORMS</a>
+        <span class="nav-sep">·</span>
+        <a href="#resume" class="nav-link" data-en="RESUME" data-ru="РЕЗЮМЕ">RESUME</a>
+        <span class="nav-sep">·</span>
+        <a href="#contact" class="nav-link" data-en="CONTACT" data-ru="КОНТАКТЫ">CONTACT</a>
+      </nav>
+
+      <!-- Language Toggle Switcher -->
+      <div class="header-actions">
+        <button id="langToggle" class="bracket-btn lang-btn" aria-label="Switch Language">
+          <span class="bracket-text">[ <span class="active-lang">EN</span> | <span class="inactive-lang">RU</span> ]</span>
+        </button>
+        
+        <button id="mobileMenuBtn" class="mobile-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-container">
+      
+      <!-- Split/Overlapping Wordmark Behind Portrait -->
+      <div class="hero-wordmark-wrapper" aria-hidden="true">
+        <h1 class="hero-wordmark wordmark-bg">
+          <span class="word-split word-left">RAHUL</span>
+          <span class="word-split word-right">NEGI</span>
+        </h1>
+      </div>
+
+      <!-- Hero Portrait Image -->
+      <div class="hero-portrait-frame">
+        <img src="assets/rahul_hero.jpg" alt="Rahul Negi — Editorial Portrait" class="hero-portrait-img">
+        <div class="portrait-shadow-gradient"></div>
+      </div>
+
+      <!-- Foreground Layered Wordmark (Creates split behind/in-front depth effect) -->
+      <div class="hero-wordmark-wrapper wordmark-fg-wrapper" aria-hidden="true">
+        <div class="hero-wordmark wordmark-fg">
+          <span class="word-split word-left">RAHUL</span>
+          <span class="word-split word-right">NEGI</span>
+        </div>
+      </div>
+
+      <!-- Hero Footer Content -->
+      <div class="hero-bottom-bar">
+        <div class="hero-tagline-col">
+          <span class="hero-eyebrow" data-en="[ COMPUTER SCIENCE ENGINEERING STUDENT | AI/ML ENTHUSIAST | SOFTWARE DEVELOPER ]" data-ru="[ СТУДЕНТ CSE | AI/ML ЭНТУЗИАСТ | РАЗРАБОТЧИК ]">[ COMPUTER SCIENCE ENGINEERING STUDENT | AI/ML ENTHUSIAST | SOFTWARE DEVELOPER ]</span>
+          <p class="hero-tagline-text" data-en="I'm a 3rd-year Computer Science Engineering student at THDC-IHET, passionate about Artificial Intelligence, Machine Learning, Data Structures & Algorithms, and software development." data-ru="Я студент 3-го курса компьютерной инженерии в THDC-IHET, увлекающийся искусственным интеллектом, машинным обучением, структурами данных и алгоритмами.">
+            I'm a 3rd-year Computer Science Engineering student at THDC-IHET, passionate about Artificial Intelligence, Machine Learning, Data Structures & Algorithms, and software development.
+          </p>
+          <div class="hero-cta-group" style="display: flex; gap: 0.8rem; margin-top: 0.4rem; flex-wrap: wrap;">
+            <a href="#work" class="bracket-btn mint-btn hero-cta">
+              <span class="bracket-text" data-en="[ VIEW PROJECTS ]" data-ru="[ ПРОЕКТЫ ]">[ VIEW PROJECTS ]</span>
+            </a>
+            <a href="#contact" class="bracket-btn hero-cta">
+              <span class="bracket-text" data-en="[ CONTACT ME ]" data-ru="[ СВЯЗАТЬСЯ ]">[ CONTACT ME ]</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-quote-col">
+          <div class="hero-status-pill">
+            <span class="pulse-indicator"></span>
+            <span data-en="3RD YEAR CSE @ THDC-IHET" data-ru="3 КУРС CSE @ THDC-IHET">3RD YEAR CSE @ THDC-IHET</span>
+          </div>
+          <p class="hero-role-title" data-en="ASPIRING SOFTWARE ENGINEER & AI-ML ENGINEER" data-ru="БУДУЩИЙ ИНЖЕНЕР ПО ПО И AI-ML">
+            ASPIRING SOFTWARE ENGINEER & AI-ML ENGINEER
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Automatic Infinite Side-Scroll Marquee Ticker -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <div class="marquee-item">
+        <span class="highlight-mint">[ 3RD YEAR CSE ]</span>
+        <span>THDC INSTITUTE OF HYDROPOWER ENGINEERING AND TECHNOLOGY</span>
+        <span class="sep-dot"></span>
+      </div>
+      <div class="marquee-item">
+        <span class="highlight-mint">[ FOCUS ]</span>
+        <span>ARTIFICIAL INTELLIGENCE & MACHINE LEARNING</span>
+        <span class="sep-dot"></span>
+      </div>
+      <div class="marquee-item">
+        <span class="highlight-mint">[ CORE ]</span>
+        <span>DATA STRUCTURES & ALGORITHMS</span>
+        <span class="sep-dot"></span>
+      </div>
+      <div class="marquee-item">
+        <span class="highlight-mint">[ STACK ]</span>
+        <span>PYTHON · C++ · JAVASCRIPT · REACT · SCIKIT-LEARN</span>
+        <span class="sep-dot"></span>
+      </div>
+      <div class="marquee-item">
+        <span class="highlight-mint">[ PROFILES ]</span>
+        <span>LEETCODE · GITHUB · KAGGLE</span>
+        <span class="sep-dot"></span>
+      </div>
+
+      <!-- Duplicate Set for Seamless Infinite Loop -->
+      <div class="marquee-item">
+        <span class="highlight-mint">[ 3RD YEAR CSE ]</span>
+        <span>THDC INSTITUTE OF HYDROPOWER ENGINEERING AND TECHNOLOGY</span>
+        <span class="sep-dot"></span>
+      </div>
+      <div class="marquee-item">
+        <span class="highlight-mint">[ FOCUS ]</span>
+        <span>ARTIFICIAL INTELLIGENCE & MACHINE LEARNING</span>
+        <span class="sep-dot"></span>
+      </div>
+      <div class="marquee-item">
+        <span class="highlight-mint">[ CORE ]</span>
+        <span>DATA STRUCTURES & ALGORITHMS</span>
+        <span class="sep-dot"></span>
+      </div>
+      <div class="marquee-item">
+        <span class="highlight-mint">[ STACK ]</span>
+        <span>PYTHON · C++ · JAVASCRIPT · REACT · SCIKIT-LEARN</span>
+        <span class="sep-dot"></span>
+      </div>
+      <div class="marquee-item">
+        <span class="highlight-mint">[ PROFILES ]</span>
+        <span>LEETCODE · GITHUB · KAGGLE</span>
+        <span class="sep-dot"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- About / Ethos Section -->
+  <section id="about" class="about-section scroll-reveal">
+    <div class="section-container">
+      <div class="section-eyebrow">
+        <span class="bracket-tag" data-en="[ 01 / ABOUT & ETHOS ]" data-ru="[ 01 / ОБО МНЕ И ФИЛОСОФИЯ ]">[ 01 / ABOUT & ETHOS ]</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="about-ethos-heading" data-en="BUILDING PRACTICAL AI/ML SOLUTIONS & MASTERING DATA STRUCTURES AND ALGORITHMS." data-ru="СОЗДАНИЕ AI/ML РЕШЕНИЙ И ОСВОЕНИЕ СТРУКТУР ДАННЫХ И АЛГОРИТМОВ.">
+            BUILDING PRACTICAL AI/ML SOLUTIONS & MASTERING DATA STRUCTURES AND ALGORITHMS.
+          </h2>
+          
+          <!-- Statistics & Focus Cards -->
+          <div class="about-stat-row" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; border-top: 1px solid var(--grid-line); padding-top: 2rem;">
+            <div class="stat-item">
+              <span class="stat-num" style="font-size: 2.2rem;">3rd Year</span>
+              <span class="stat-label" data-en="CSE STUDENT @ THDC-IHET" data-ru="СТУДЕНТ CSE @ THDC-IHET">CSE STUDENT @ THDC-IHET</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" style="font-size: 2.2rem;">AI / ML</span>
+              <span class="stat-label" data-en="LEARNING & BUILDING" data-ru="ИЗУЧЕНИЕ И РАЗРАБОТКА">LEARNING & BUILDING</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" style="font-size: 2.2rem;">DSA</span>
+              <span class="stat-label" data-en="PROBLEM SOLVING" data-ru="РЕШЕНИЕ ЗАДАЧ">PROBLEM SOLVING</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num" style="font-size: 2.2rem;">PROJECTS</span>
+              <span class="stat-label" data-en="PRACTICAL DEVELOPMENT" data-ru="ПРАКТИЧЕСКАЯ РАЗРАБОТКА">PRACTICAL DEVELOPMENT</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <p class="about-para" data-en="I am Rahul Negi, a 3rd-year Computer Science Engineering student at THDC Institute of Hydropower Engineering and Technology (THDC-IHET). I am interested in Artificial Intelligence, Machine Learning, Data Science, Software Development, and problem solving." data-ru="Я Рахул Неги, студент 3-го курса компьютерной инженерии в THDC-IHET. Я увлекаюсь искусственным интеллектом, машинным обучением, наукой о данных и разработкой ПО.">
+            I am Rahul Negi, a 3rd-year Computer Science Engineering student at THDC Institute of Hydropower Engineering and Technology (THDC-IHET). I am interested in Artificial Intelligence, Machine Learning, Data Science, Software Development, and problem solving.
+          </p>
+
+          <p class="about-para" data-en="I am continuously improving my programming and Data Structures & Algorithms skills while building practical projects in AI/ML and web development. I enjoy exploring new technologies, working on real-world problems, and turning ideas into useful applications." data-ru="Я постоянно совершенствую навыки программирования, алгоритмов и структур данных, создавая практические проекты в AI/ML и веб-разработке.">
+            I am continuously improving my programming and Data Structures & Algorithms skills while building practical projects in AI/ML and web development. I enjoy exploring new technologies, working on real-world problems, and turning ideas into useful applications.
+          </p>
+
+          <p class="about-para secondary" data-en="My current focus is on strengthening my foundation in DSA and AI/ML while developing projects that demonstrate my technical skills and learning journey." data-ru="В настоящее время я сосредоточен на углублении знаний в DSA и AI/ML, развивая проекты, которые демонстрируют мои технические навыки.">
+            My current focus is on strengthening my foundation in DSA and AI/ML while developing projects that demonstrate my technical skills and learning journey.
+          </p>
+
+          <div class="about-actions">
+            <a href="#work" class="bracket-btn mint-btn">
+              <span class="bracket-text" data-en="[ EXPLORE PROJECTS ]" data-ru="[ ПРОЕКТЫ ]">[ EXPLORE PROJECTS ]</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education-section scroll-reveal" style="background-color: var(--bg-dark); border-bottom: 1px solid var(--grid-line);">
+    <div class="section-container">
+      <div class="section-eyebrow">
+        <span class="bracket-tag" data-en="[ 02 / EDUCATION ]" data-ru="[ 02 / ОБРАЗОВАНИЕ ]">[ 02 / EDUCATION ]</span>
+      </div>
+
+      <div class="education-card skill-category-box" style="padding: 2.5rem; border: 1px solid rgba(201, 232, 181, 0.2); background-color: var(--bg-card); border-radius: 4px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem; margin-bottom: 1.5rem;">
+          <div>
+            <span class="bracket-tag" style="margin-bottom: 0.5rem;" data-en="[ BACHELOR OF TECHNOLOGY ]" data-ru="[ БАКАЛАВР ТЕХНОЛОГИЙ ]">[ BACHELOR OF TECHNOLOGY ]</span>
+            <h3 style="font-family: var(--font-display); font-size: 2.2rem; letter-spacing: 0.03em; color: var(--text-main); margin-top: 0.2rem;">THDC INSTITUTE OF HYDROPOWER ENGINEERING AND TECHNOLOGY (THDC-IHET)</h3>
+            <p style="font-size: 1.1rem; color: var(--accent-mint); font-weight: 500; margin-top: 0.4rem;" data-en="B.Tech in Computer Science Engineering" data-ru="B.Tech по компьютерным наукам и инженерии">B.Tech in Computer Science Engineering</p>
+          </div>
+          <div style="text-align: right;">
+            <span class="bracket-btn" style="border-color: var(--accent-mint); color: var(--accent-mint);">2023 – Present</span>
+            <p style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); margin-top: 0.6rem;" data-en="Current Status: 3rd Year" data-ru="Текущий статус: 3-й курс">Current Status: 3rd Year</p>
+          </div>
+        </div>
+
+        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6;" data-en="Focusing on Core Computer Science Fundamentals, Data Structures & Algorithms, Artificial Intelligence, Machine Learning, Database Management Systems, and Web Engineering." data-ru="Специализация на базовых компьютерных науках, алгоритмах и структурах данных, искусственном интеллекте, машинном обучении и веб-инженерии.">
+          Focusing on Core Computer Science Fundamentals, Data Structures & Algorithms, Artificial Intelligence, Machine Learning, Database Management Systems, and Web Engineering.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & AI/ML Section -->
+  <section id="skills" class="skills-section scroll-reveal">
+    <div class="section-container">
+      <div class="section-eyebrow">
+        <span class="bracket-tag" data-en="[ 03 / SKILLS & TECH STACK ]" data-ru="[ 03 / НАВЫКИ И ТЕХНОЛОГИИ ]">[ 03 / SKILLS & TECH STACK ]</span>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skills-heading-col">
+          <h2 class="skills-title" data-en="ENGINEERED WITH MODERN SPEED, SCALABILITY, AND AI/ML DISCIPLINE." data-ru="РАЗРАБОТАНО С ВЫСОКОЙ СКОРОСТЬЮ, МАСШТАБИРУЕМОСТЬЮ И AI/ML ДИСЦИПЛИНОЙ.">
+            ENGINEERED WITH MODERN SPEED, SCALABILITY, AND AI/ML DISCIPLINE.
+          </h2>
+          <p class="skills-desc" data-en="Bridging computer science fundamentals with practical machine learning models and responsive user experiences." data-ru="Объединяю основы компьютерных наук с практическими моделями машинного обучения и адаптивным пользовательским интерфейсом.">
+            Bridging computer science fundamentals with practical machine learning models and responsive user experiences.
+          </p>
+          <div class="skills-action">
+            <a href="#resume" class="bracket-btn mint-btn">
+              <span class="bracket-text" data-en="[ VIEW RESUME ]" data-ru="[ РЕЗЮМЕ ]">[ VIEW RESUME ]</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="skills-list-col">
+          
+          <!-- Category 1: Programming & CS -->
+          <div class="skill-category-box">
+            <h3 class="category-name" data-en="[ PROGRAMMING & COMPUTER SCIENCE ]" data-ru="[ ПРОГРАММИРОВАНИЕ И КС ]">[ PROGRAMMING & COMPUTER SCIENCE ]</h3>
+            <div class="skill-tags-group">
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Data Structures & Algorithms</span>
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">DBMS</span>
+              <span class="skill-tag">Operating Systems</span>
+              <span class="skill-tag">Computer Networks</span>
+            </div>
+          </div>
+
+          <!-- Category 2: AI / Machine Learning -->
+          <div class="skill-category-box">
+            <h3 class="category-name" data-en="[ AI / MACHINE LEARNING & DATA SCIENCE ]" data-ru="[ AI / МАШИННОЕ ОБУЧЕНИЕ ]">[ AI / MACHINE LEARNING & DATA SCIENCE ]</h3>
+            <div class="skill-tags-group">
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Data Analysis</span>
+              <span class="skill-tag">Data Visualization</span>
+              <span class="skill-tag">Model Training</span>
+              <span class="skill-tag">Model Evaluation</span>
+              <span class="skill-tag">Basic Deep Learning</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Web Dev & Tools -->
+          <div class="skill-category-box">
+            <h3 class="category-name" data-en="[ WEB DEVELOPMENT & TOOLS ]" data-ru="[ ВЕБ-РАЗРАБОТКА И ИНСТРУМЕНТЫ ]">[ WEB DEVELOPMENT & TOOLS ]</h3>
+            <div class="skill-tags-group">
+              <span class="skill-tag">HTML</span>
+              <span class="skill-tag">CSS</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Responsive Design</span>
+              <span class="skill-tag">UI Development</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">GitHub</span>
+              <span class="skill-tag">VS Code</span>
+              <span class="skill-tag">Jupyter Notebook</span>
+              <span class="skill-tag">Google Colab</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Projects Section with Automatic Side-Scroll Carousel -->
+  <section id="work" class="work-section project-carousel-section scroll-reveal">
+    <div class="section-container" style="padding-bottom: 2rem;">
+      <div class="work-header" style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 2rem;">
+        <div>
+          <div class="section-eyebrow" style="margin-bottom: 0.8rem;">
+            <span class="bracket-tag" data-en="[ 04 / SELECTED PROJECTS ]" data-ru="[ 04 / ИЗБРАННЫЕ ПРОЕКТЫ ]">[ 04 / SELECTED PROJECTS ]</span>
+          </div>
+          <p class="work-subtitle" data-en="A curated auto-moving carousel of AI/ML models, data science analytics, and front-end applications." data-ru="Автоматическая карусель проектов в области искусственного интеллекта и веб-разработки.">
+            A curated auto-moving carousel of AI/ML models, data science analytics, and front-end applications.
+          </p>
+        </div>
+
+        <!-- Carousel Interactive Controls -->
+        <div class="project-controls-bar">
+          <button id="projectPrevBtn" class="bracket-btn" aria-label="Previous project">
+            <span class="bracket-text">[ ← PREV ]</span>
+          </button>
+          <button id="projectPauseBtn" class="bracket-btn mint-btn" aria-label="Toggle auto-slide movement">
+            <span class="bracket-text" id="pauseBtnText">[ AUTO-SLIDE ON ]</span>
+          </button>
+          <button id="projectNextBtn" class="bracket-btn" aria-label="Next project">
+            <span class="bracket-text">[ NEXT → ]</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Automatic Continuous Infinite Slide Track -->
+    <div class="project-carousel-container">
+      <div class="project-carousel-track" id="projectTrack">
+        
+        <!-- Slide 1: AI/ML Project 1 -->
+        <div class="project-card-slide mosaic-item" data-project="01">
+          <div class="slide-img-box">
+            <img src="assets/work_1.jpg" alt="AI/ML Project 1" class="slide-img mosaic-img">
+          </div>
+          <div class="slide-body">
+            <span class="slide-num">01 / AI-ML</span>
+            <h3 class="slide-title">[PROJECT NAME]</h3>
+            <p class="slide-desc" data-en="Machine learning application built for data analysis, feature engineering, and model evaluation." data-ru="Приложение машинного обучения для анализа данных и оценки моделей.">
+              Machine learning application built for data analysis, feature engineering, and model evaluation.
+            </p>
+          </div>
+          <div class="slide-footer">
+            <span class="slide-tech-tag">[ Python, Pandas, NumPy, Scikit-learn ]</span>
+            <div class="slide-btn-group">
+              <a href="[INSERT GITHUB URL]" target="_blank" class="bracket-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ GITHUB ]</a>
+              <a href="[INSERT LIVE LINK]" target="_blank" class="bracket-btn mint-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ DEMO ]</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2: AI/ML Project 2 -->
+        <div class="project-card-slide mosaic-item" data-project="02">
+          <div class="slide-img-box">
+            <img src="assets/work_2.jpg" alt="AI/ML Project 2" class="slide-img mosaic-img">
+          </div>
+          <div class="slide-body">
+            <span class="slide-num">02 / DATA SCIENCE</span>
+            <h3 class="slide-title">[PROJECT NAME]</h3>
+            <p class="slide-desc" data-en="Predictive modeling and data science project exploring dataset analytics and pattern recognition." data-ru="Проект предиктивного моделирования и анализа данных.">
+              Predictive modeling and data science project exploring dataset analytics and pattern recognition.
+            </p>
+          </div>
+          <div class="slide-footer">
+            <span class="slide-tech-tag">[ Python, Machine Learning, Data Science ]</span>
+            <div class="slide-btn-group">
+              <a href="[INSERT GITHUB URL]" target="_blank" class="bracket-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ GITHUB ]</a>
+              <a href="[INSERT LIVE LINK]" target="_blank" class="bracket-btn mint-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ DEMO ]</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3: Front-End Project 1 -->
+        <div class="project-card-slide mosaic-item" data-project="03">
+          <div class="slide-img-box">
+            <img src="assets/work_3.jpg" alt="Front-End Project 1" class="slide-img mosaic-img">
+          </div>
+          <div class="slide-body">
+            <span class="slide-num">03 / FRONT-END</span>
+            <h3 class="slide-title">[PROJECT NAME]</h3>
+            <p class="slide-desc" data-en="Responsive web interface built with clean component structure, modern CSS, and fluid layout." data-ru="Адаптивный веб-интерфейс с чистой компонентной структурой.">
+              Responsive web interface built with clean component structure, modern CSS, and fluid layout.
+            </p>
+          </div>
+          <div class="slide-footer">
+            <span class="slide-tech-tag">[ HTML, CSS, JavaScript / React ]</span>
+            <div class="slide-btn-group">
+              <a href="[INSERT GITHUB URL]" target="_blank" class="bracket-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ GITHUB ]</a>
+              <a href="[INSERT LIVE LINK]" target="_blank" class="bracket-btn mint-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ DEMO ]</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4: Interactive Web Architecture -->
+        <div class="project-card-slide mosaic-item" data-project="04">
+          <div class="slide-img-box">
+            <img src="assets/work_4.jpg" alt="Interactive Web Architecture" class="slide-img mosaic-img">
+          </div>
+          <div class="slide-body">
+            <span class="slide-num">04 / WEB SYSTEM</span>
+            <h3 class="slide-title">INTERACTIVE PORTFOLIO</h3>
+            <p class="slide-desc" data-en="High-performance dark-mode web portfolio featuring grid micro-typography and smooth scroll interactions." data-ru="Высокопроизводительное портфолио с тёмной эстетикой и микро-типографикой.">
+              High-performance dark-mode web portfolio featuring grid micro-typography and smooth scroll interactions.
+            </p>
+          </div>
+          <div class="slide-footer">
+            <span class="slide-tech-tag">[ HTML5, CSS3, JavaScript, Lenis ]</span>
+            <div class="slide-btn-group">
+              <a href="https://github.com/Iamrahulzax" target="_blank" class="bracket-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ GITHUB ]</a>
+              <a href="[INSERT LIVE LINK]" target="_blank" class="bracket-btn mint-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ DEMO ]</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Duplicate Cards Set for Seamless Infinite Loop -->
+        <div class="project-card-slide mosaic-item" data-project="01">
+          <div class="slide-img-box">
+            <img src="assets/work_1.jpg" alt="AI/ML Project 1" class="slide-img mosaic-img">
+          </div>
+          <div class="slide-body">
+            <span class="slide-num">01 / AI-ML</span>
+            <h3 class="slide-title">[PROJECT NAME]</h3>
+            <p class="slide-desc" data-en="Machine learning application built for data analysis, feature engineering, and model evaluation." data-ru="Приложение машинного обучения для анализа данных и оценки моделей.">
+              Machine learning application built for data analysis, feature engineering, and model evaluation.
+            </p>
+          </div>
+          <div class="slide-footer">
+            <span class="slide-tech-tag">[ Python, Pandas, NumPy, Scikit-learn ]</span>
+            <div class="slide-btn-group">
+              <a href="[INSERT GITHUB URL]" target="_blank" class="bracket-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ GITHUB ]</a>
+              <a href="[INSERT LIVE LINK]" target="_blank" class="bracket-btn mint-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ DEMO ]</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card-slide mosaic-item" data-project="02">
+          <div class="slide-img-box">
+            <img src="assets/work_2.jpg" alt="AI/ML Project 2" class="slide-img mosaic-img">
+          </div>
+          <div class="slide-body">
+            <span class="slide-num">02 / DATA SCIENCE</span>
+            <h3 class="slide-title">[PROJECT NAME]</h3>
+            <p class="slide-desc" data-en="Predictive modeling and data science project exploring dataset analytics and pattern recognition." data-ru="Проект предиктивного моделирования и анализа данных.">
+              Predictive modeling and data science project exploring dataset analytics and pattern recognition.
+            </p>
+          </div>
+          <div class="slide-footer">
+            <span class="slide-tech-tag">[ Python, Machine Learning, Data Science ]</span>
+            <div class="slide-btn-group">
+              <a href="[INSERT GITHUB URL]" target="_blank" class="bracket-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ GITHUB ]</a>
+              <a href="[INSERT LIVE LINK]" target="_blank" class="bracket-btn mint-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ DEMO ]</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card-slide mosaic-item" data-project="03">
+          <div class="slide-img-box">
+            <img src="assets/work_3.jpg" alt="Front-End Project 1" class="slide-img mosaic-img">
+          </div>
+          <div class="slide-body">
+            <span class="slide-num">03 / FRONT-END</span>
+            <h3 class="slide-title">[PROJECT NAME]</h3>
+            <p class="slide-desc" data-en="Responsive web interface built with clean component structure, modern CSS, and fluid layout." data-ru="Адаптивный веб-интерфейс с чистой компонентной структурой.">
+              Responsive web interface built with clean component structure, modern CSS, and fluid layout.
+            </p>
+          </div>
+          <div class="slide-footer">
+            <span class="slide-tech-tag">[ HTML, CSS, JavaScript / React ]</span>
+            <div class="slide-btn-group">
+              <a href="[INSERT GITHUB URL]" target="_blank" class="bracket-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ GITHUB ]</a>
+              <a href="[INSERT LIVE LINK]" target="_blank" class="bracket-btn mint-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ DEMO ]</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card-slide mosaic-item" data-project="04">
+          <div class="slide-img-box">
+            <img src="assets/work_4.jpg" alt="Interactive Web Architecture" class="slide-img mosaic-img">
+          </div>
+          <div class="slide-body">
+            <span class="slide-num">04 / WEB SYSTEM</span>
+            <h3 class="slide-title">INTERACTIVE PORTFOLIO</h3>
+            <p class="slide-desc" data-en="High-performance dark-mode web portfolio featuring grid micro-typography and smooth scroll interactions." data-ru="Высокопроизводительное портфолио с тёмной эстетикой и микро-типографикой.">
+              High-performance dark-mode web portfolio featuring grid micro-typography and smooth scroll interactions.
+            </p>
+          </div>
+          <div class="slide-footer">
+            <span class="slide-tech-tag">[ HTML5, CSS3, JavaScript, Lenis ]</span>
+            <div class="slide-btn-group">
+              <a href="https://github.com/Iamrahulzax" target="_blank" class="bracket-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ GITHUB ]</a>
+              <a href="[INSERT LIVE LINK]" target="_blank" class="bracket-btn mint-btn" style="padding: 0.2rem 0.5rem; font-size: 0.7rem;">[ DEMO ]</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Platforms & Profiles Section (DSA / LeetCode, GitHub, Kaggle) -->
+  <section id="platforms" class="platforms-section scroll-reveal" style="background-color: #161616; border-top: 1px solid var(--grid-line); border-bottom: 1px solid var(--grid-line);">
+    <div class="section-container">
+      <div class="section-eyebrow">
+        <span class="bracket-tag" data-en="[ 05 / PLATFORMS & PROFILES ]" data-ru="[ 05 / ПЛАТФОРМЫ И ПРОФИЛИ ]">[ 05 / PLATFORMS & PROFILES ]</span>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+        
+        <!-- LeetCode / DSA Card -->
+        <div class="skill-category-box" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 class="category-name" data-en="[ DSA & PROBLEM SOLVING ]" data-ru="[ DSA И АЛГОРИТМЫ ]">[ DSA & PROBLEM SOLVING ]</h3>
+            <h4 style="font-family: var(--font-display); font-size: 1.8rem; letter-spacing: 0.03em; color: var(--text-main); margin-bottom: 0.8rem;">LEETCODE PROFILE</h4>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;" data-en="I regularly practice Data Structures and Algorithms to improve my problem-solving ability and prepare for technical interviews." data-ru="Я регулярно практикую алгоритмы и структуры данных для развития навыков решения задач.">
+              I regularly practice Data Structures and Algorithms to improve my problem-solving ability and prepare for technical interviews.
+            </p>
+          </div>
+          <div>
+            <a href="https://leetcode.com/u/rahulnegi_01/" target="_blank" rel="noopener noreferrer" class="bracket-btn mint-btn" style="width: 100%;">
+              <span class="bracket-text">[ LEETCODE PROFILE ↗ ]</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- GitHub Card -->
+        <div class="skill-category-box" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 class="category-name" data-en="[ GITHUB DEVELOPMENT ]" data-ru="[ GITHUB РАЗРАБОТКА ]">[ GITHUB DEVELOPMENT ]</h3>
+            <h4 style="font-family: var(--font-display); font-size: 1.8rem; letter-spacing: 0.03em; color: var(--text-main); margin-bottom: 0.8rem;">GITHUB REPOSITORIES</h4>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;" data-en="I use GitHub to build, experiment with, and document my programming, AI/ML, and web development projects." data-ru="Я использую GitHub для создания, экспериментов и документирования моих проектов в области программирования и AI/ML.">
+              I use GitHub to build, experiment with, and document my programming, AI/ML, and web development projects.
+            </p>
+          </div>
+          <div>
+            <a href="https://github.com/Iamrahulzax" target="_blank" rel="noopener noreferrer" class="bracket-btn mint-btn" style="width: 100%;">
+              <span class="bracket-text">[ GITHUB PROFILE ↗ ]</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Kaggle Card -->
+        <div class="skill-category-box" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 class="category-name" data-en="[ KAGGLE DATA SCIENCE ]" data-ru="[ KAGGLE ДАННЫЕ ]">[ KAGGLE DATA SCIENCE ]</h3>
+            <h4 style="font-family: var(--font-display); font-size: 1.8rem; letter-spacing: 0.03em; color: var(--text-main); margin-bottom: 0.8rem;">KAGGLE WORKSPACE</h4>
+            <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 1.5rem;" data-en="I use Kaggle to explore datasets, practice machine learning, experiment with models, and improve my data science skills." data-ru="Я использую Kaggle для анализа наборов данных, практики машинного обучения и моделирования.">
+              I use Kaggle to explore datasets, practice machine learning, experiment with models, and improve my data science skills.
+            </p>
+          </div>
+          <div>
+            <a href="https://www.kaggle.com/rahulnegi01" target="_blank" rel="noopener noreferrer" class="bracket-btn mint-btn" style="width: 100%;">
+              <span class="bracket-text">[ KAGGLE PROFILE ↗ ]</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume-section scroll-reveal" style="background-color: var(--bg-dark); border-bottom: 1px solid var(--grid-line);">
+    <div class="section-container" style="text-align: center; max-width: 800px;">
+      <div class="section-eyebrow" style="display: flex; justify-content: center;">
+        <span class="bracket-tag" data-en="[ 06 / RESUME ]" data-ru="[ 06 / РЕЗЮМЕ ]">[ 06 / RESUME ]</span>
+      </div>
+
+      <h2 style="font-family: var(--font-display); font-size: clamp(2.5rem, 5vw, 4.5rem); letter-spacing: 0.03em; color: var(--text-main); margin-bottom: 1rem;" data-en="MY RESUME" data-ru="МОЁ РЕЗЮМЕ">
+        MY RESUME
+      </h2>
+
+      <p style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 2.5rem;" data-en="Explore my education, technical skills, projects, and learning journey through my resume." data-ru="Ознакомьтесь с моим образованием, техническими навыками, проектами и академическим путем.">
+        Explore my education, technical skills, projects, and learning journey through my resume.
+      </p>
+
+      <a href="[INSERT RESUME LINK]" target="_blank" class="bracket-btn mint-btn" style="padding: 0.9rem 2.2rem; font-size: 0.9rem;">
+        <span class="bracket-text" data-en="[ DOWNLOAD RESUME ]" data-ru="[ СКАЧАТЬ РЕЗЮМЕ ]">[ DOWNLOAD RESUME ]</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact & Footer Section -->
+  <section id="contact" class="contact-section scroll-reveal">
+    <div class="section-container">
+      <div class="section-eyebrow">
+        <span class="bracket-tag" data-en="[ 07 / CONTACT ]" data-ru="[ 07 / КОНТАКТЫ ]">[ 07 / CONTACT ]</span>
+      </div>
+
+      <div class="contact-content">
+        <h2 class="contact-headline" data-en="LET'S BUILD SOMETHING EXTRAORDINARY." data-ru="СОЗДАДИМ ЧТО-ТО ВЫДАЮЩЕЕСЯ ВМЕСТЕ.">
+          LET'S BUILD SOMETHING EXTRAORDINARY.
+        </h2>
+        
+        <p class="contact-subhead" data-en="Have a project, collaboration idea, or inquiry? Reach out directly or copy my email address." data-ru="Есть проект, идея для сотрудничества или вопрос? Напишите мне или скопируйте email.">
+          Have a project, collaboration idea, or inquiry? Reach out directly or copy my email address.
+        </p>
+
+        <!-- Email Copy Pill -->
+        <div class="email-copy-box">
+          <span class="email-address">rahulnegi270406@gmail.com</span>
+          <button id="copyEmailBtn" class="bracket-btn mint-btn copy-btn" aria-label="Copy email address">
+            <span class="bracket-text" data-en="[ COPY EMAIL ]" data-ru="[ СКОПИРОВАТЬ EMAIL ]">[ COPY EMAIL ]</span>
+          </button>
+          <span id="copyToast" class="copy-toast" aria-hidden="true" data-en="COPIED TO CLIPBOARD!" data-ru="СКОПИРОВАНО В БУФЕР!">COPIED TO CLIPBOARD!</span>
+        </div>
+
+        <!-- Social Connections -->
+        <div class="social-links-bar">
+          <a href="https://github.com/Iamrahulzax" target="_blank" rel="noopener noreferrer" class="social-link">
+            <span class="bracket-text">[ GITHUB ]</span>
+          </a>
+          <a href="https://www.linkedin.com/in/rahul-negi-662a26428/" target="_blank" rel="noopener noreferrer" class="social-link">
+            <span class="bracket-text">[ LINKEDIN ]</span>
+          </a>
+          <a href="https://leetcode.com/u/rahulnegi_01/" target="_blank" rel="noopener noreferrer" class="social-link">
+            <span class="bracket-text">[ LEETCODE ]</span>
+          </a>
+          <a href="https://www.kaggle.com/rahulnegi01" target="_blank" rel="noopener noreferrer" class="social-link">
+            <span class="bracket-text">[ KAGGLE ]</span>
+          </a>
+          <a href="mailto:rahulnegi270406@gmail.com" class="social-link">
+            <span class="bracket-text">[ EMAIL ]</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Row -->
+      <footer class="footer-bottom">
+        <div class="footer-left">
+          <span class="footer-copy">© 2026 RAHUL NEGI. COMPUTER SCIENCE ENGINEERING | AI/ML | SOFTWARE DEVELOPMENT. ALL RIGHTS RESERVED.</span>
+        </div>
+        <div class="footer-right">
+          <button id="backToTopBtn" class="bracket-btn top-btn" aria-label="Scroll back to top">
+            <span class="bracket-text" data-en="[ TOP ↑ ]" data-ru="[ ВВЕРХ ↑ ]">[ TOP ↑ ]</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Image Lightbox Modal for Mosaic Items -->
+  <div id="lightboxModal" class="lightbox-modal" aria-hidden="true">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content">
+      <button id="lightboxClose" class="bracket-btn lightbox-close-btn" aria-label="Close image preview">
+        <span class="bracket-text">[ CLOSE ✕ ]</span>
+      </button>
+      <img id="lightboxImg" src="" alt="Project Preview Detail" class="lightbox-img">
+      <div class="lightbox-caption">
+        <h4 id="lightboxTitle" class="lightbox-title">PROJECT TITLE</h4>
+        <span id="lightboxTag" class="lightbox-tag">[ CATEGORY ]</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lenis Smooth Scroll Library -->
+  <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
